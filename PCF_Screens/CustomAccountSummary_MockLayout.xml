@@ -1,0 +1,29 @@
+<!-- CustomAccountSummary_MockLayout.xml -->
+<PanelSet id="AccountSummary_Custom" label="Account Summary">
+  <Row>
+    <Column span="12">
+      <Text label="Welcome to AutoSecure Policy Summary!" />
+    </Column>
+  </Row>
+
+  <Row>
+    <Column span="6">
+      <ListView id="RecentPolicies" label="Recently Issued Policies">
+        <ColumnHeader key="PolicyNumber" label="Policy #" />
+        <ColumnHeader key="EffectiveDate" label="Effective Date" />
+        <ColumnHeader key="Status" label="Status" />
+      </ListView>
+    </Column>
+
+    <Column span="6">
+      <InputSet id="ContactPreferenceSet" label="Customer Contact Info">
+        <Select id="PreferredContactMethod" label="Preferred Contact Method">
+          <Option key="Email" label="Email" />
+          <Option key="Phone" label="Phone" />
+          <Option key="SMS" label="SMS" />
+        </Select>
+        <TextInput id="ContactValue" label="Contact Details" />
+      </InputSet>
+    </Column>
+  </Row>
+</PanelSet>
