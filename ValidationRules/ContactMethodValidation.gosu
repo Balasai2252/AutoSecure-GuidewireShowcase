@@ -1,0 +1,15 @@
+// ContactMethodValidation.gosu
+
+rule ContactMethodValidation when 
+  account:Account
+{
+  description = "Reject account if preferred contact method is missing"
+
+  condition {
+    return account.preferredContactMethod == null or account.contactDetails == null or account.contactDetails.isEmpty()
+  }
+
+  action {
+    error("Preferred contact method and details must be provided before proceeding.")
+  }
+}
