@@ -1,0 +1,27 @@
+{
+  "description": "Mock REST API call to external Driving History Service",
+
+  "request": {
+    "method": "POST",
+    "endpoint": "https://api.drivinghistory.com/check",
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer <access-token>"
+    },
+    "body": {
+      "licenseNumber": "AP123456",
+      "dob": "2000-01-15"
+    }
+  },
+
+  "response": {
+    "status": 200,
+    "body": {
+      "accidents": 2,
+      "lastAccidentDate": "2023-05-01",
+      "status": "Moderate Risk"
+    }
+  },
+
+  "note": "This mock demonstrates how PolicyCenter would send a REST request to an external system and use the response in underwriting rules or validations."
+}
