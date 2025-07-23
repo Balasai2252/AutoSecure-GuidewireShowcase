@@ -1,0 +1,13 @@
+rule HighValueVehicleApprovalRule when 
+  policy:PersonalAutoLine
+{
+  description = "Send to UW approval if vehicle value > ₹20 Lakhs"
+
+  condition {
+    return policy.vehicles.any(\v -> v.value > 2000000)
+  }
+
+  action {
+    requireApproval("High-value vehicle requires manual underwriting review.")
+  }
+}
