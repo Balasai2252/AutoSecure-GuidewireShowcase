@@ -31,6 +31,14 @@ AutoSecure is a fictional insurance company offering Personal Auto Insurance. As
 - Sample request/response in JSON format
 - Designed a mock REST integration for external driving history check, including headers, request payload, and structured JSON response.
 
+### 5. Batch Process
+- Designed a mock batch process to identify and remind customers about unconverted quotes after 10 days.
+
+### 6. Validation Rules
+- Implemented a validation rule to ensure preferred contact method is provided before proceeding with policy/account.
+
+### 7. Jira Ticket Stimulation
+- Simulated a bug ticket to fix underwriting rule misfire, added root cause analysis and test case documentation.
 ---
 
 ## 📂 Project Structure
