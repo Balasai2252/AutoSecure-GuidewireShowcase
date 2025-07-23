@@ -20,6 +20,7 @@ AutoSecure is a fictional insurance company offering Personal Auto Insurance. As
 - Custom `AccountSummary.pcf` screen with:
   - Recently issued policies section
   - Customer preferred contact method field
+  -  “Customized AccountSummary.pcf to add recent policies and preferred contact info”
 
 ### 3. Underwriting Rules
 - Reject policy if driver age is under 18
