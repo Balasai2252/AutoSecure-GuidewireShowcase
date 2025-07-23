@@ -29,8 +29,19 @@ AutoSecure is a fictional insurance company offering Personal Auto Insurance. As
 ### 4. Integration (Mock)
 - REST API mock to fetch driver's accident history
 - Sample request/response in JSON format
+- Designed a mock REST integration for external driving history check, including headers, request payload, and structured JSON response.
 
 ---
 
 ## 📂 Project Structure
-
+AutoSecure-GuidewireShowcase/
+├── README.md
+├── Product_Design/
+│   └── AutoProductDefinition.pdf  ← (Product model table goes here)
+├── PCF_Screens/
+│   └── CustomAccountSummary_MockLayout.xml  ← (PCF mock layout)
+├── UnderwritingRules/
+│   ├── DriverAgeValidationRule.gosu         ← (Gosu rule #1)
+│   └── HighValueVehicleApprovalRule.gosu    ← (Gosu rule #2)
+├── Integration/
+│   └── DrivingHistory_REST_Mock.json
