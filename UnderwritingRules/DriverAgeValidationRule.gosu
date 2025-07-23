@@ -1,0 +1,15 @@
+// DriverAgeValidationRule.gosu
+
+rule DriverAgeValidationRule when 
+  policy:PersonalAutoLine
+{
+  description = "Reject policy if driver is under 18 years of age"
+
+  condition {
+    return policy.drivers.any(\d -> d.age < 18)
+  }
+
+  action {
+    reject("Driver must be at least 18 years old to purchase this policy.")
+  }
+}
