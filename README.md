@@ -53,3 +53,13 @@ AutoSecure-GuidewireShowcase/
 │   └── HighValueVehicleApprovalRule.gosu    ← (Gosu rule #2)
 ├── Integration/
 │   └── DrivingHistory_REST_Mock.json
+├── Batch Process/
+    └── UnconvertedQuoteReminder_BatchConfig.md
+├── Validation Rules/
+    └── ContactMethodValidation.gosu
+├── Tickets/
+    └── JIRA-1245_FixDriverAgeValidation.md
+
+
+
+    <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/6836bb95-1064-4b6e-8b09-d4ae6daf50cd" />
